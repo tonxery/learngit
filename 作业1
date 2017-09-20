@@ -1,0 +1,49 @@
+                                                                        课前思考
+
+1.用户访问网站，浏览器在后台执行哪些步骤?
+浏览器查找域名的IP地址，DNS查找过程，浏览器缓存,系统缓存，路由器缓存，ISP DNS缓存，ISP DNS从根域名服务器递归搜索
+
+2.什么是HTTP协议？什么是TCP/IP协议？SOCKET又是什么？
+TCP/IP位于传输层，HTTP位于应用层，SOCKET位于应用层之上，
+
+3.Python是世界上最好用的语言吗？
+python只是解决问题最快的语言，运行速度比不上c/c++,大型应用比不上java
+                                                                              准备工作  
+
+1.选择python2还是python3？为什么？
+python3是未来发展趋势，现在很多模块都有了python3的支持，python3是python2的功能优化和部分调整。
+
+2.编辑器选择：Sublime Text、VS Code PyCharm、Atom？为什么？
+Sublime Text当今流行的编辑器，安装插件方便
+
+Atom支持github和网络的编辑器
+
+PyCharm专为python定制
+
+VS Code 微软出的一款编辑器
+
+3.什么是MVC？M(模型model)？V(视图View)？C（控制器Controller)?
+View接受用户输入，并传递到Controller.
+
+Controller统一进行处理命令，交由Model处理具体的业务.
+
+经过处理Model更新后，Controller会选一个View并把Model内容传递给它
+
+                                                                               Django入门
+
+1。安装Django环境
+pip install django
+2。建立第一个Django项目，通过浏览器访问到该项目首页。
+django-admin startproject mysite
+python manage.py runserver
+3。熟悉Djiango目录结构，了解每个子目录功能
+mysite/ #项目一容器，命名与Django无关，可用任意名
+
+    manage.py #命令行工具，可对Django交互，
+    mysite/   #创建的python包，它是你导入任何东西时将需要使用Python包的名字
+        __init__.py #空文件用于表示这是一个包
+        settings.py #该项目的设置/配置。Django设置将告诉你这些设置如何工具。
+        urls.py     #该Django设置的URL声明;Django站点目录。
+        wsgi.py     #用于你的项目的与WSGI兼容的Web服务器入口。
+                                                                 github
+git@github.com:tonxery/learngit.git
